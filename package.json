@@ -1,0 +1,25 @@
+{
+  "name": "voopik-backend-challenge-1",
+  "version": "1.0.0",
+  "description": "An API endpoint that provides autocomplete suggestions for large cities. The suggestions should be restricted to cities in the USA and Canada with a population above 5000 people.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markeu/voopik-backend.git"
+  },
+  "keywords": [
+    "Voopik",
+    "Internship"
+  ],
+  "author": "Uche Uzochukwu Mark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markeu/voopik-backend/issues"
+  },
+  "homepage": "https://github.com/markeu/voopik-backend#readme"
+}
