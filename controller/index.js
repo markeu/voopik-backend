@@ -2,14 +2,14 @@ import fs from 'fs';
 import tsv from 'tsv';
 import score from 'string-score';
 
-let fetchData = {};
+let fetchData = [];
+
+    // Read in TSV and parse data
+fs.readFile("./data/cities_canada-usa.tsv", "utf8", (error, data) => {
+    fetchData = tsv.parse(data);
+});
 export default class SuggestionController {
     static async suggestion( req, res ) {
-         // Read in TSV and parse data
-        fs.readFile("./data/cities_canada-usa.tsv", "utf8", (error, data) => {
-            fetchData = tsv.parse(data);
-        });
-
         // Get the string score
         let getScore = (data, term) => {
             const suggestions = [];
@@ -30,29 +30,22 @@ export default class SuggestionController {
             });
 
             return suggestions;
-        }
-
-        try {
+        };
+            // Get search query 
             const inputs = req.query.q.toLowerCase().trim();
-          
             if ( inputs.length > 0) {
 
                 const filteredCities = fetchData.filter(city => {
                    return ((city.population > 5000) && ((city.name.toLowerCase().includes(inputs) || city.alt_name.toLowerCase().split(",").includes(inputs))))
                 });
+                
                 const suggestions = getScore(filteredCities, inputs)
                 return res.status(200).json({suggestions});
             } else {
-                return res.status(400).json({
+                return res.status(404).json({
                     status: 'error',
                     error: 'Invalid search term'
                   });
-            };
-        } catch (error) {
-            return res.status(500).json({
-                status: 'error',
-                error: error
-              });
             };
         };
 };
