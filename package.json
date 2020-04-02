@@ -3,9 +3,25 @@
   "version": "1.0.0",
   "description": "An API endpoint that provides autocomplete suggestions for large cities. The suggestions should be restricted to cities in the USA and Canada with a population above 5000 people.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.4.5",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "nodemon": "^2.0.2",
+    "path": "^0.12.7",
+    "string-score": "^1.0.1",
+    "tsv": "^0.2.0"
+  },
   "devDependencies": {},
   "scripts": {
+    "start": "nodemon --exec babel-node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
