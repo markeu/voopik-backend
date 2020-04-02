@@ -1,0 +1,9 @@
+node_modules/
+out/
+npm-debug.log
+npm-debug.log.*
+.tmp
+.DS_Store
+.idea/
+*.swp
+env.sh
