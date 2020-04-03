@@ -95,6 +95,4 @@ https://dry-journey-26858.herokuapp.com
 ```
 
 
-it should produce an output similar to:
-
 
