@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/markeu/voopik-backend.svg?branch=develop)](https://travis-ci.com/markeu/voopik-backend) [![Coverage Status](https://coveralls.io/repos/github/markeu/voopik-backend/badge.svg?branch=develop)](https://coveralls.io/github/markeu/voopik-backend?branch=develop)
+
 # Voopik Coding Challenge
 
 ## Requirements
@@ -76,57 +78,12 @@ These responses are meant to provide guidance. The exact values can vary based o
 
 You can find the necessary dataset along with its description and documentation in the [`data`](data/) directory.
 
-## Evaluation
-
-We will use the following criteria to evaluate your solution:
-
-- Capacity to follow instructions
-- Developer Experience (how easy it is to run your solution locally, how clear your documentation is, etc)
-- Solution correctness
-- Performance
-- Tests (quality and coverage)
-- Code style and cleanliness
-- Attention to detail
-- Ability to make sensible assumptions
-
-It is ok to ask us questions!
-
-We know that the time for this project is limited and it is hard to create a "perfect" solution, so we will consider that along with your experience when evaluating the submission.
-
-## Getting Started
-
-### Prerequisites
-
-You are going to need:
-
-- `Git`
-- `nvm` (or your preferred node version manager)
-- `Node.js`
-
-### Setting up your environment
-
-1. Begin by forking this repo and cloning your fork. GitHub has apps for [Mac](http://mac.github.com/) and
-   [Windows](http://windows.github.com/) that make this easier.
-
-2. Install [nvm](https://github.com/nvm-sh/nvm#install--update-script) or your preferred node version manager.
-
-3. Install [Node.js](http://www.nodejs.org).
-
-### Setting up the project
-
-In the project directory run:
-
-```
-nvm use
-npm install
-```
-
 ### Running the tests
 
 The test suite can be run with:
 
 ```
-npm run test
+npm test
 ```
 
 ### Starting the application
@@ -134,7 +91,7 @@ npm run test
 To start a local server run:
 
 ```
-npm run start
+npm start
 ```
 
 it should produce an output similar to:
