@@ -68,12 +68,6 @@ These responses are meant to provide guidance. The exact values can vary based o
 }
 ```
 
-### Non-functional
-
-- All code should be written in Javascript or Typescript.
-- Mitigations to handle high levels of traffic should be implemented.
-- Documentation and maintainability is a plus.
-
 ## Dataset
 
 You can find the necessary dataset along with its description and documentation in the [`data`](data/) directory.
@@ -93,9 +87,14 @@ To start a local server run:
 ```
 npm start
 ```
+To start on Heroku
+
+```
+https://dry-journey-26858.herokuapp.com
+
+```
+
 
 it should produce an output similar to:
 
-```
-Server running at http://127.0.0.1:2345/suggestions
-```
+
