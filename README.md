@@ -87,7 +87,7 @@ To start a local server run:
 ```
 npm start
 ```
-To start on Heroku
+To run on Heroku
 
 ```
 https://dry-journey-26858.herokuapp.com
